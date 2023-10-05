@@ -1,0 +1,38 @@
+body {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 200px);
+    grid-template-areas: 
+    "header header header header" /*inicio das 4 colunas reservadas para o header*/
+    "main main . sidebar" /*o . representa uma area vazia*/
+    "footer footer footer footer";
+
+    /*grid-template: "header header header header" 100px
+    "main main . sidebar" 300px
+    "footer footer footer footer" 100px / 'Aqui começa grid-T-columns' 1fr 3fr 1fr 1fr*/
+}
+
+.container {
+    border: 2px solid;
+    display: grid;
+}
+
+header {
+    background-color: orange;
+    grid-area: header;
+}
+
+main {
+    background-color: aqua;
+    grid-area: main;
+}
+
+aside {
+    background-color: tomato;
+    grid-area: sidebar;
+}
+
+footer {
+    background-color: yellowgreen;
+    grid-area: footer;
+}

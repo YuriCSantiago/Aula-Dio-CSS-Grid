@@ -1,0 +1,49 @@
+body {
+    display: grid;
+    border: 3px solid;
+    height: 80vh;
+    grid-template: repeat(3, auto) / repeat(3, auto);
+    gap: 15px;
+
+/*    justify-items: stretch;/*stretch -> valor padrão / Start -> se posiciona a esquerda do grid / end -> Pro final / center -> centralizado*/
+/*   align-items: start;/*start -> Alinhar no topo meio / end -> Embaixo meio / Center
+    place-items: start end; /*Final emcima(canto superior direito)*/ /*end end -> Inferior direito*/
+    place-items: center;
+    justify-content: center;
+}
+
+.item-01 {
+    background: red;
+}
+
+.item-02 {
+    background: paleturquoise;
+}
+
+.item-03 {
+    background: blue;
+}
+
+.item-04 {
+    background: black;
+}
+
+.item-05 {
+    background: yellow;
+}
+
+.item-06 {
+    background: green;
+}
+
+.item-07 {
+    background: purple;
+}
+
+.item-08 {
+    background: maroon;
+}
+
+.item-09 {
+    background: lightgreen;
+}

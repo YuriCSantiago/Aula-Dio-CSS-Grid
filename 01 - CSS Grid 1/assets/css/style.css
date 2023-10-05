@@ -1,0 +1,12 @@
+.container {
+    border: 1px solid black;
+    padding: 10px;
+    margin-bottom: 20px;
+
+    display: grid; /*grid, um elemento abaixo do outro*/
+    /*inline-grid Um elemento ao lado do outro ocupando apenas o tamanho do conteudo*/
+}
+
+.item {
+    background: palegreen;
+}

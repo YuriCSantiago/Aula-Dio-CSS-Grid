@@ -1,0 +1,50 @@
+.container {
+    background: yellow;
+    padding: 10px;
+    margin-bottom: 20px;
+    height: 500px;
+
+    display: grid;
+    /*    grid-template-columns: 2fr 1fr 1fr 1fr;/*3 valores = 3 colunas*/
+    /*2fr 1fr 1fr - 2fr vai ocupar um espaço maior*/
+    grid-template-columns: repeat(3, 1fr);/*repeat(3 - quantas vezes deve repetir a coluna, 1fr)*/
+    /*grid-template-columns: 100px repeat(3, 1fr) 100px*/
+    /*grid-template-columns: respeat(3, 1fr 2fr)-> como se fosse 1fr 2fr 1fr 2fr 1fr 2fr*/
+    /*grid-template-columns: Autofill, 100px; Vai ajustar o maximo de coluna que couberem 100px em uma linha*/
+    /*grid-template-columns: min-content min-content; tamanho da coluna sera de acordo com o tamanho do conteudo*/
+    grid-template-rows: repeat(2, 1fr);
+    /*    grid-template-rows: 2fr 1fr;
+    /*Tamanho das linhas*/
+}
+
+.item {
+    border: 1px solid black;
+}
+
+.item-01 {
+    background: palevioletred;
+}
+
+.item-02 {
+    background: rgb(139, 139, 232);
+}
+
+.item-03 {
+    background: palegreen;
+}
+
+.item-04 {
+    background: orange;
+}
+
+.item-05 {
+    background: gray;
+}
+
+.item-06 {
+    background: paleturquoise;
+}
+
+.item-07 {
+    background: tomato;
+}

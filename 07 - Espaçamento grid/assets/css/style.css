@@ -1,0 +1,49 @@
+body {
+    display: grid;
+    border: 3px solid;
+    grid-template: repeat(3, 200px) / repeat(3, 1fr);
+
+/*    row-gap: 10px;
+    column-gap: 20px; */
+
+    padding: 15px;
+    gap: 15px;
+}
+
+
+
+.item-01 {
+    background: red;
+}
+
+.item-02 {
+    background: paleturquoise;
+}
+
+.item-03 {
+    background: blue;
+}
+
+.item-04 {
+    background: black;
+}
+
+.item-05 {
+    background: yellow;
+}
+
+.item-06 {
+    background: green;
+}
+
+.item-07 {
+    background: purple;
+}
+
+.item-08 {
+    background: maroon;
+}
+
+.item-09 {
+    background: lightgreen;
+}

@@ -1,0 +1,76 @@
+.container {
+    border: 1px solid;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) 4fr repeat(2, 1fr);/*Duas primeiras colunas com 1fr e uma tercera com 4fr*/
+    grid-template-rows: 50px 100px 200px;
+}
+
+.item {
+    text-align: center;
+    background-color: orange;
+    grid-column-start: 2; /* começa na linha 2 e termina na linha 5 grid-column-end: 5; */
+    grid-column-end: 5;
+
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.item-02 {
+    text-align: center;
+    background-color: aqua;
+
+/*  grid-column-start: 1;
+    grid-column-end: span 3; /*Vai ocupar 3 celular para que a figura se posicione*/
+    
+    grid-column: 1 / span 3;
+
+/*    grid-row-start: 2;
+    grid-row-end: span 2; */
+
+    grid-row: 2 / span 2;
+}
+
+
+/* Exemplos */
+
+.container-01 {
+    border: 2px solid;
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 100px);
+}
+
+.item-03 {
+    text-align: center;
+    background-color: yellow;
+}
+
+.selected {
+    background-color: tomato;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+
+/*Exemplo*/
+
+.container-02 {
+    border: 2px solid;
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 100px);
+}
+
+.item-04 {
+    text-align: center;
+    background-color: green;
+}
+
+.selecionado {
+    background-color: purple;
+    grid-column: 3 / 3;
+    grid-row: 2 / 3;
+}
+
